@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aima-audiobook"
+version = "0.1.0"
+description = "Your own PDF of Artificial Intelligence: A Modern Approach (4th ed.) as a chapterised audiobook, with the notation spoken properly."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Cosmo", email = "aditya@latticelabs.au" }]
+keywords = ["audiobook", "text-to-speech", "aima", "russell-norvig", "m4b", "edge-tts"]
+dependencies = ["pymupdf>=1.24", "edge-tts>=7.0"]
+
+[project.scripts]
+aima-audiobook = "aima_audiobook:main"
+
+[project.urls]
+Homepage = "https://github.com/addievo/aima-audiobook"
+Issues = "https://github.com/addievo/aima-audiobook/issues"
+
+[tool.setuptools]
+py-modules = ["aima_audiobook"]

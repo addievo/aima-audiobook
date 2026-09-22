@@ -1,0 +1,23 @@
+# never the book, never the audio
+*.pdf
+*.mp3
+*.m4b
+*.m4a
+*.list
+*.ffmeta
+*.chapters.txt
+*(spoken).txt
+aima-audiobook/
+out/
+text/
+audio/
+cover.jpg
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
